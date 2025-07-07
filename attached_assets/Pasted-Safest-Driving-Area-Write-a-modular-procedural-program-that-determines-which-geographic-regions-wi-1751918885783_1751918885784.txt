@@ -1,0 +1,43 @@
+Safest Driving Area
+Write a modular, procedural program that determines which geographic regions within a major
+city (north, south, east, west, and central) had the fewest reported automobile accidents last
+year.
+Input Validation: Do not accept an accident number that is less than 0.
+Analysis
+Algorithm:
+• Get the name of a region and the number of accidents reported last year from interactive
+input.
+• Use those values to initialize variables to hold the name and number of accidents of the
+region which had the lowest number of accidents.
+• For each region
+o Get the name of a region and the number of accidents reported last year from
+interactive input.
+o Determine if its number of accidents is less than the current lowest.
+o if it is, store the name and number of accident values in the variables holding the
+lowest accident number.
+• Display the name and number of accidents for the region with the lowest accident rate.
+Hierarchy Chart:
+Functions:
+Include comments in your program for these functions. Write comments from the point of view of
+someone who wants to use the function but doesn’t need to know how the function works.
+Describe the input to the function and any preconditions related to that input. Describe the
+postconditions (what value the function returns to the caller if any, or what side effects occur as
+a result of running the function).
+1. main()
+• This program determines the safest driving region in the city based on the number of
+accidents reported for each region during the past year.
+2. getRegInfo()
+• This function gets the name of a region and the number of accidents that occurred in
+that region during the past year.
+o The number of accidents must be >= 0.
+• (Note - Since the function returns two values, the parameters must be reference
+parameters).
+3. isLower()
+• This function takes two integer values as input, it returns true if the first value is <= the
+second value, otherwise it returns false.
+• (Note, this function returns a Boolean value).
+4. showLowest()
+• This function gets the name of the region with the lowest reported accidents for the year
+and the number of accidents for that region. It displays these values on the number.
+• (Note – this function does not return anything to the caller, so the postcondition is that it
+writes the values to the display)
